@@ -1,0 +1,21 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.7s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active .modal,
+.fade-leave-active .modal {
+    transition-property: opacity, transform;
+    transition: 0.5s ease-out;
+}
+
+.fade-enter-from .modal,
+.fade-leave-to .modal {
+    opacity: 0;
+    transform: translateX(-2rem);
+}
